@@ -1,6 +1,6 @@
-rg ="rg-avd-eas-std-sap-compute1"
+rg ="rg-avd-eas-std-win11-compute2"
 bol ="false"
-prefix="azeassapssh"
-rdsh_count=40
-rfc3339="2024-08-28T20:43:13Z"
-image_number="16.08.2024"
+prefix="wzw11sapssh"
+rdsh_count=48
+rfc3339="2024-10-01T20:43:13Z"
+image_number="16.09.2024"
