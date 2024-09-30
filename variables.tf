@@ -43,7 +43,7 @@ variable "vm_size" {
 }
 
 variable "ou_path" {
-  default = "OU=Eastasia,OU=SessionHosts,OU=AVD,OU=VDI,OU=Production,OU=Clients,DC=CRB,DC=APMOLLER,DC=NET"
+  default = "OU=EastAsia,OU=SessionHosts - Win11,OU=AVD,OU=VDI,OU=Production,OU=Clients,DC=CRB,DC=APMOLLER,DC=NET"
 }
 
 variable "local_admin_username" {
@@ -54,7 +54,7 @@ variable "local_admin_username" {
 
 variable "hostpoolname" {
   description = "Host Pool Name to Register Session Hosts"
-  default     = "HP-STD-PROD-SAP-EAS"
+  default     = "HP-STD-Win11-sap-EAS"
 }
 
 variable "artifactslocation" {
