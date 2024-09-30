@@ -13,8 +13,8 @@ resource "azurerm_virtual_desktop_host_pool" "hp" {
     load_balancer_type       = "BreadthFirst"
     location                 = "westeurope"
     maximum_sessions_allowed = 11
-    name                     = "HP-STD-PROD-SAP-EAS"
-    preferred_app_group_type = "Desktop"
+    name                     = "HP-STD-Win11-sap-EAS"
+    preferred_app_group_type = "RailApplications"
     resource_group_name      = "avdazhprgeas"
     start_vm_on_connect      = "${var.bol}"
     tags                     = {
@@ -64,7 +64,7 @@ data "azurerm_subnet" "vm_subnet" {
 
 data "azurerm_shared_image_version" "image" {
 name                = var.image_number
-image_name          = "azure_windows_10_baseos_avd_sap800_22h2"
+image_name          = "azure_windows_11_baseos_avd_sap800_23h2"
 gallery_name        = "acgazweuavdprod02"
 resource_group_name = "rgazweuavdprodacg01"
 }
