@@ -54,7 +54,7 @@ variable "local_admin_username" {
 
 variable "hostpoolname" {
   description = "Host Pool Name to Register Session Hosts"
-  default     = "HP-STD-Win11-sap-EAS"
+  default     = "hp-std-win11-sap-eas"
 }
 
 variable "artifactslocation" {
