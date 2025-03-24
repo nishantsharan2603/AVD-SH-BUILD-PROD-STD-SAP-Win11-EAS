@@ -212,3 +212,19 @@ resource "azurerm_monitor_data_collection_rule_association" "avd_dcra" {
  data_collection_rule_id = data.azurerm_monitor_data_collection_rule.dcravd.id
 }
 
+resource "azapi_resource_action" "enterdrainmode" {
+  count       = var.rdsh_count
+  type        = "Microsoft.DesktopVirtualization/hostPools/sessionHosts@2024-04-03"
+  resource_id = "${azurerm_virtual_desktop_host_pool.hp.id}/sessionhosts/${var.prefix}-${count.index + 1}.${var.domain_name}"
+  method      = "PATCH"
+
+  body = {
+    properties = {
+      allowNewSession = false
+    }
+  }
+
+  depends_on = [
+    azurerm_virtual_machine_extension.vmext_dsc 
+  ]
+}
