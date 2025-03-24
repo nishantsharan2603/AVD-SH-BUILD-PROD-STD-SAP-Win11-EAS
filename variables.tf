@@ -39,7 +39,7 @@ variable "domain_user_upn" {
 
 variable "vm_size" {
   description = "Size of the machine to deploy"
-  default     = "Standard_E4ds_v5"
+  default     = "Standard_E8ds_v5"
 }
 
 variable "ou_path" {
