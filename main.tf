@@ -48,7 +48,7 @@ output "admin_password" {
 
 
 data "azurerm_key_vault_secret" "domain_password" {
-  name         = "DomainAccount"
+  name         = "DomainAccount1"
   key_vault_id = data.azurerm_key_vault.key_vault.id
 }
 output "domain_password" {
