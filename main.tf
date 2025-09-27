@@ -57,8 +57,8 @@ output "domain_password" {
 }
 
 data "azurerm_subnet" "vm_subnet" {
-  name                 = "vnsazeapsoeki001avddesktop"
-  virtual_network_name = "vneazeapsoek001azurevirtdesk"
+  name                 = "vnsazeapsoeki002avddesktop"
+  virtual_network_name = "vneazeapsoek002azurevirtdesk"
   resource_group_name  = "Default-Networking"
 }
 
