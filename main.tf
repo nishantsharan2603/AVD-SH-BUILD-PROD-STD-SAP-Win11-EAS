@@ -103,7 +103,7 @@ resource "azurerm_windows_virtual_machine" "avd_vm" {
       }
 
   source_image_id = data.azurerm_shared_image_version.image.id
-
+  encryption_at_host_enabled = true
   os_disk {
     name                 = "${lower(var.prefix)}-${count.index + 1}"
     caching              = "ReadWrite"
