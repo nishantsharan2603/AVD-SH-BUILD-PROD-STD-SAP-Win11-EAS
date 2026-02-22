@@ -8,7 +8,7 @@ data "azurerm_user_assigned_identity" "mgmtidentity" {
   }
 
 resource "azurerm_virtual_desktop_host_pool" "hp" {
-    custom_rdp_properties    = "usemultimon:i:0;drivestoredirect:s:*;audiomode:i:0;videoplaybackmode:i:1;redirectclipboard:i:1;redirectprinters:i:1;devicestoredirect:s:*;redirectcomports:i:0;redirectsmartcards:i:1;usbdevicestoredirect:s:;enablecredsspsupport:i:1;maximizetocurrentdisplays:i:0;screen mode id:i:0"
+    custom_rdp_properties    = "usemultimon:i:0;drivestoredirect:s:*;usbdevicestoredirect:s:;redirectclipboard:i:1;redirectprinters:i:1;audiomode:i:0;videoplaybackmode:i:1;devicestoredirect:s:*;redirectcomports:i:0;redirectsmartcards:i:1;enablecredsspsupport:i:1;redirectwebauthn:i:1;use multimon:i:1;maximizetocurrentdisplays:i:0;screen mode id:i:0"
     description              = "Created through the Azure Virtual Desktop extension"
     load_balancer_type       = "DepthFirst"
     location                 = "westeurope"
