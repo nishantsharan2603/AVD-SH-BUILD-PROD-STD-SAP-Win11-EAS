@@ -13,7 +13,7 @@ resource "azurerm_virtual_desktop_host_pool" "hp" {
     load_balancer_type       = "DepthFirst"
     location                 = "westeurope"
     maximum_sessions_allowed = 14
-    name                     = "HP-STD-Win1124h2-SAP-EAS"
+    name                     = "HP-STD-Win1124h2-sap-EAS"
     preferred_app_group_type = "RailApplications"
     resource_group_name      = "rg-avd-eas-win1124H2-corecomponent"
     start_vm_on_connect      = "${var.bol}"
