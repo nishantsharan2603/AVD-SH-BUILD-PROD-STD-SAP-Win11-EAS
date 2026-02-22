@@ -14,7 +14,7 @@ terraform {
     resource_group_name  = "avdstorageeasrg"
     storage_account_name = "avdeasstc02"
     container_name       = "tfstate"
-    key                  = "terraform-eas-sap-win11.tfstate"
+    key                  = "terraform-eas-sap-win1124h2.tfstate"
   }
 }
 
